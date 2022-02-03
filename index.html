@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Deportivo</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        button{
+            background-color: rgb(27, 120, 207);
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(8, 75, 75);
+        }
+    </style>
+</head>
+<body>
+    <header><H1>Mi primer Formulario</H1></header>
+    <section>
+        <form action="MiPrimerFormulario" name="name" method="post">
+            <label>Su nombre completo es :</label>
+            <input type="text" required placeholder="Nombre">
+            <input type="text" required placeholder="Primer Apellido ">
+            <input type="text" placeholder="Segundo Apellido">
+            <br/><br/>
+            <label for="fechanacimiento">Ingrese su fecha nacimiento :</label>
+            <input type="date" name="fechanacimiento" id="fechanacimiento" required>
+            <br/><br/>
+            <label for="edad">Ingrese su edad: </label>
+            <input type="number" name="edad" id="edad" required>
+            <br/><br/>
+            <label for="identificacion">Tipo de identificación: </label>
+            <input type="radio" name="opcion" value="1" id="">Cédula de identidad
+            <input type="radio" name="opcion" value="2"id="">Pasaporte
+            <br/><br/>
+            <label for="numeroidentificacion">Número de identificación: </label>
+            <input type="text" placeholder="CI xx.xxx.xxx-K" required>
+            <br/><br/>
+            <label for="domicilio">Ingrese su domicilio: </label>
+            <input type="text">
+            <br/><br/>
+            <label for="identificacion">Es alergico: </label>
+            <input type="radio" name="opcionalergia" value="1" id="Si" required>Si
+            <input type="radio" name="opcionalergia" value="2"id="No" required>No
+            <br/><br/>
+            <label for="">Enfermedades relevantes: </label><br/>
+            <input type="checkbox" name="opcionenfermedad">Enfermedades cardiacas <br/>
+            <input type="checkbox" name="opcionenfermedad">Diabetes <br/>
+            <input type="checkbox" name="opcionenfermedad">Colesterol <br/>
+            <input type="checkbox" name="opcionenfermedad">Lesion graves <br/>
+            <input type="checkbox" name="opcionenfermedad">Lesion leves <br/>
+            <input type="checkbox" name="opcionenfermedad">Otros <br/>
+            <input type="checkbox" name="opcionenfermedad">Ninguna de las anteriores
+            <br/><br/>
+            <label for="">Medicamentos contraindicados: </label>
+            <input type="text">
+            <br/><br/>
+            <label for="">Nacionalidad: </label>
+            <input type="text">
+            <br/><br/>
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </section>
+    <footer></footer>
+    
+</body>
+</html>
